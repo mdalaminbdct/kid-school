@@ -1,0 +1,119 @@
+/* -------Font CSS--------- */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+
+/* ---------Share style---------- */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width:1160px;
+    margin: 0 auto;
+}
+
+.display-flex{
+    display: flex;
+}
+.display-grid{
+    display: grid;
+}
+
+.primary-btn {
+        padding: 10px 50.5px;
+        color: white;
+        font-size: 1.25rem;
+        font-weight: 600px;
+        border: none;
+        border-radius: 12px;
+    
+    }
+
+
+
+
+/* ---------Navigation style---------- */
+
+.navigation{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.logo{
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    justify-content: space-between;
+}
+
+.nav-list{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1.25rem;
+    margin-left: 20px;
+}
+.home {
+    color: #FEA301;
+}
+
+.about {
+    color: #01ACFD;
+}
+
+.facillities {
+    color: #05D4DF;
+}
+
+.admission {
+    color: #5D58EF;
+}
+.nav-btn{
+    background-color:#FEA301 ;
+}
+.nav-btn:hover{
+    background-color: #05D4DF;
+}
+
+.burger{
+    display: none;
+    wid
+}
+
+
+
+
+
+
+
+
+
+/* ---------Media Query For Mobile Device ----------*/
+
+
+@media screen and (max-width:576px) {
+
+/* ------Nevigation for mobile device----- */
+
+    .burger{
+        display:inline;
+    }
+    .navbar,.nav-btn{
+        display: none;
+    }
+
+
+    
+}
