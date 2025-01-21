@@ -92,8 +92,30 @@
     wid
 }
 
+/* ---------Banner section ----------*/
 
+.hero{
+    justify-content:center;
+    align-items:center;
+    gap:20px;
 
+}
+
+.hero-title{
+    font-size:3.50rem;
+    font-weight:700px;
+}
+.hero-description{
+    padding: 30px 0;
+}
+
+.hero-btn{
+    background-color:#FEA301;
+}
+
+.hero-btn:hover{
+background-color: #01ACFD;
+}
 
 
 
@@ -114,6 +136,14 @@
         display: none;
     }
 
+/* ------Banner for mobile device----- */
+
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    
 
     
 }
