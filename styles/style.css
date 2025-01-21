@@ -95,7 +95,7 @@
 
 .burger{
     display: none;
-    wid
+    
 }
 
 /* ---------Banner section ----------*/
@@ -122,7 +122,12 @@
 .hero-btn:hover{
 background-color: #01ACFD;
 }
-
+.hero-img{
+    width: 670px;
+}
+.hero-img img{
+    width: 100%;
+}
 /* ---------main section ----------*/
 main{
     background-image: url(/assets/bg.png);
@@ -198,11 +203,11 @@ main{
 
 /* ---------Stories Section------------ */
 
-.stories{
+/* .stories{
     background-image: linear-gradient(360deg, #f9e0b4 30%,rgba(255, 255, 255, 1) 100% );
     
 
-}
+} */
 
 .stories-card{
      gap: 20px;
@@ -256,7 +261,6 @@ main{
 .last-btn {
     text-align: center;
     padding: 80px;
-    padding: 60px;
 }
 
 .last-btn >button{
@@ -269,7 +273,34 @@ main{
 
 
 
+/* ----------Footer Section----------- */
 
+
+footer{
+    background-color:#01ACFD ;
+}
+
+.foot{
+    justify-content: space-evenly;
+    /* align-items: center; */
+    color: white;
+    padding: 123px 0;
+}
+
+.nav-list{
+    margin-bottom:10px;
+}
+.footer-about> h3{
+    margin-bottom: 10px; 
+}
+
+.icon-footer> h3{
+    margin-bottom:50px;
+
+}
+.icon-footer>img {
+    margin-right: 10px;
+}
 
 
 
@@ -283,20 +314,22 @@ main{
 
     /* -------Share Media Query----- */
 
+        .container{
+            max-width: 95%;
+        }
+
+
+
     .primary-btn{
         padding: 10px 20px;
-        color: white;
         font-size:1rem;
-        font-weight:400px;
-        border:none;
-        border-radius:12px;     
+        font-weight:400px;     
      }
 
 
     .title{
         font-size:1.875rem;
         font-weight:500px;    
-        text-align:center;
         margin-top:20px;
         margin-bottom:40px;
     }
@@ -319,6 +352,13 @@ main{
     .hero-title{
         font-size:2.50rem;
         font-weight:500px;
+    }
+    .hero-img{
+        width: 100%;
+        text-align:center;
+    }
+    .hero-img img{
+        width:80%;
     }
 
 
@@ -352,7 +392,7 @@ main{
     .mid-btn{
         background-color: #95B226;
         border: none;
-        border-radius: 47.93px;
+        border-radius:47.93px;
         color: white;
         padding: 5px 10px;
 
@@ -361,6 +401,18 @@ main{
         text-align: center;
         padding:15px 30px;
     
+}
+
+/* ------footer for mobile device----- */
+    
+.foot{
+    flex-direction: column;
+    align-items:left;
+}
+
+.icon-footer> h3{
+    margin-bottom:30px;
+
 }
 
 }
