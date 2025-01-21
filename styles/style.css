@@ -116,12 +116,20 @@
 }
 
 .hero-btn{
-    background-color:#FEA301;
+    background-color:black;
 }
 
 .hero-btn:hover{
 background-color: #01ACFD;
 }
+
+/* ---------main section ----------*/
+main{
+    background-image: url(/assets/bg.png);
+}
+
+
+
 
 /* ---------curriculum section ----------*/
 
@@ -141,13 +149,15 @@ background-color: #01ACFD;
 }
 .card-title{
     font-size:1.5rem;
-    font-weight: 700px;
-    margin-top:30px;
-    margin-bottom:30px;
+    font-weight:700px;
+    /* margin-top:30px;
+    margin-bottom:30px; */
+    padding: 10px;
 
 }
 .card-description{
     color: #808080;
+    padding: 0 10px;
 }
 
 .curriculum-card >h5{
@@ -186,6 +196,77 @@ background-color: #01ACFD;
 }
 
 
+/* ---------Stories Section------------ */
+
+.stories{
+    background-image: linear-gradient(360deg, #f9e0b4 30%,rgba(255, 255, 255, 1) 100% );
+    
+
+}
+
+.stories-card{
+     gap: 20px;
+    
+}
+.stories-btn{
+    margin-top: -20px;
+     margin-left: 10px;
+}
+
+.big-card {
+    border-radius:16px;
+    width:40%;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0,0.1);
+   
+}
+.mid-btn{
+    background-color: #95B226;
+    border: none;
+    border-radius: 47.93px;
+    color: white;
+    padding: 14px 20px;
+}
+.mid-btn:hover{
+    background-color: #FEA301;
+}
+
+.big-card >img{
+    border-radius: 16px 16px 0 0 ;
+    width: 100%;
+
+
+}
+.small-cards {
+    grid-template-columns: repeat(2, 2fr);
+    width:60%;
+    gap: 20px;
+}
+.small-card {
+    border-radius:16px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+
+}
+.small-card>img{
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+}
+
+.last-btn {
+    text-align: center;
+    padding: 80px;
+    padding: 60px;
+}
+
+.last-btn >button{
+    background-color: black;
+}
+.last-btn>button:hover{
+ background-color: #FEA301; 
+}
+
+
 
 
 
@@ -200,12 +281,24 @@ background-color: #01ACFD;
 
 @media screen and (max-width:576px) {
 
+    /* -------Share Media Query----- */
+
+    .primary-btn{
+        padding: 10px 20px;
+        color: white;
+        font-size:1rem;
+        font-weight:400px;
+        border:none;
+        border-radius:12px;     
+     }
+
+
     .title{
-        font-size:2.875rem;
-        font-weight:700px;    
+        font-size:1.875rem;
+        font-weight:500px;    
         text-align:center;
-        margin-top:40px;
-        margin-bottom:60px;
+        margin-top:20px;
+        margin-bottom:40px;
     }
 
 /* ------Nevigation for mobile device----- */
@@ -223,6 +316,10 @@ background-color: #01ACFD;
         flex-direction: column-reverse;
         text-align: center;
     }
+    .hero-title{
+        font-size:2.50rem;
+        font-weight:500px;
+    }
 
 
 /* ------curriculam for mobile device----- */
@@ -238,7 +335,32 @@ background-color: #01ACFD;
         margin:5px 20px;
     }
 
-    
 
+/* ------stories for mobile device----- */
+
+    .big-card{
+        display: none;
+    }
+    .small-cards{
+        margin: 0 20px;
+        width:100%;
+          
+    }
+    .card-title{
+        font-size: 1.25rem;
+    }
+    .mid-btn{
+        background-color: #95B226;
+        border: none;
+        border-radius: 47.93px;
+        color: white;
+        padding: 5px 10px;
+
+    }
+    .last-btn {
+        text-align: center;
+        padding:15px 30px;
+    
+}
 
 }
