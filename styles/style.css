@@ -98,10 +98,12 @@
     
 }
 
+/* ----------marque style---------- */
 
-.hr-line{
-    display: none;
+marquee{
+    margin-top:10px;
 }
+
 
 /* ---------Banner section ----------*/
 
@@ -342,15 +344,6 @@ footer{
         display: none;
     }
 
-    .hr-line{
-        display: inline;
-        margin:10px; 
-        border: none;
-        height: 2px;
-        color: #FEA301;
-    }
-    
-    
 
 /* ------Banner for mobile device----- */
 
