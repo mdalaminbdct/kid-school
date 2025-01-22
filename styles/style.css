@@ -104,6 +104,11 @@ marquee{
     margin-top:10px;
 }
 
+/* -----------Horizontal line-------- */
+
+
+
+
 
 /* ---------Banner section ----------*/
 
@@ -316,7 +321,7 @@ footer{
     /* -------Share Media Query----- */
 
         .container{
-            max-width: 95%;
+            max-width:98%;
         }
 
 
@@ -343,6 +348,15 @@ footer{
     .navbar,.nav-btn{
         display: none;
     }
+
+    /* ------Horizontal line ------- */
+
+    .horizontal-line {
+        height: 2px;
+        background-color:#FEA301;
+        margin:10px 0;
+    }
+
 
 
 /* ------Banner for mobile device----- */
